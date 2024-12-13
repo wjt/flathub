@@ -1,0 +1,11 @@
+--- a/main.lua	2024-12-13 10:44:09.959376673 +0000
++++ b/main.lua	2024-12-13 10:44:38.139568412 +0000
+@@ -11,6 +11,8 @@
+ 	scr_width = 1000
+ 	scr_height = 800
+ 	love.window.setMode(scr_width, scr_height)
++	love.window.setTitle("Debris Drifter")
++	love.mouse.setVisible(false)
+ 
+ 	est_frame_rate = 0
+ 

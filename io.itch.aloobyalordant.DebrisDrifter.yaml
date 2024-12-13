@@ -1,0 +1,39 @@
+app-id: io.itch.aloobyalordant.DebrisDrifter
+runtime: org.freedesktop.Platform
+runtime-version: "24.08"
+sdk: org.freedesktop.Sdk
+base: org.love2d.love2d
+base-version: stable
+command: debris-drifter
+finish-args:
+  - --device=dri
+  - --socket=pulseaudio
+  - --socket=fallback-x11
+  - --socket=wayland
+modules:
+  - name: debris-drifter
+    buildsystem: simple
+    build-commands:
+      - cp -ra . /app/game
+    sources:
+      - type: archive
+        url: https://html-classic.itch.zone/html/12228643/DebrisDrifter1.1.07/game.data
+        sha256: c8d5fd5fb55bf3cc5ceb41723ce80cba75039f99827a195129bc6af11e79e8c1
+        archive-type: zip
+        strip-components: 0
+      - type: patch
+        path: window-title-no-mouse.patch
+
+  - name: launcher-etc
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 debris-drifter.sh /app/bin/debris-drifter
+      - install -Dm644 io.itch.aloobyalordant.DebrisDrifter.desktop /app/share/applications
+      - install -Dm644 io.itch.aloobyalordant.DebrisDrifter.metainfo.xml /app/share/metainfo
+    sources:
+      - type: file
+        path: debris-drifter.sh
+      - type: file
+        path: io.itch.aloobyalordant.DebrisDrifter.desktop
+      - type: file
+        path: io.itch.aloobyalordant.DebrisDrifter.metainfo.xml

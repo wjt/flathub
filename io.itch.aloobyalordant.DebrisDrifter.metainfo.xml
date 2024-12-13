@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="desktop-application">
+  <id>io.itch.aloobyalordant.DebrisDrifter</id>
+  <name>Debris Drifter</name>
+  <summary>Mouse-based shooter</summary>
+  <developer id="io.itch.aloobyalordant">
+    <name>aloobyalordant</name>
+  </developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>TODO</project_license>
+  <description>
+    <p>You've lived in the outer debris field for 127 years, drifting between the asteroids and discarded ships of old empires. Sure, you have to be on constant alert to avoid getting flattened against the side of a stray asteroid. But you only need to sleep with two quadrants of your brain at a time, and the floating shapes provide a serene environment while you work on your undergrad thesis.</p>
+    <p>Now, however, a mining consortium has decided that debris field presents a mineral-rich opportunity. The only problem is, interstellar treaties forbid the granting of mining rights in inhabited territory. But there's an easy fix for that: remove the inhabitants.</p>
+    <p>They are coming for you. There are too many of them, and one hit will take you out. But they're in your home. Navigating this place comes as easy to you as algebraic geometry. So you're going to win.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <!-- TODO -->
+      <caption>LÖVE running without a Game</caption>
+      <image type="source">https://love2d.org/w/images/9/9b/11.0-NoGame.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <!-- TODO -->
+  </releases>
+  <url type="homepage">https://aloobyalordant.itch.io/debris-drifter</url>
+  <categories>
+    <category>Game</category>
+    <category>ArcadeGame</category>
+  </categories>
+  <requires>
+    <control>pointing</control>
+  </requires>
+  <content_rating type="oars-1.1"/>
+  <!-- TODO -->
+  <launchable type="desktop-id">io.itch.aloobyalordant.DebrisDrifter.desktop</launchable>
+</component>

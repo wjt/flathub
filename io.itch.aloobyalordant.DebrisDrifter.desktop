@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Debris Drifter
+Comment=Mouse-based space shooter
+Exec=/app/bin/debris-drifter
+Type=Application
+Categories=Game;ArcadeGame;
+Terminal=false
+# TODO
+Icon=org.love2d.love2d
+NoDisplay=false
